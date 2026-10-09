@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-10-09T06:51:36.021689+00:00'
+generated-at: '2026-10-09T13:53:51.287575+00:00'
 proxies:
 - name: 🇭🇰 香港 | HKG 7
   server: 47.244.120.197
@@ -97,6 +97,14 @@ proxies:
   sni: ace-liger.rooster465.autos
   skip-cert-verify: true
   udp: true
+- name: 🇸🇬 新加坡 | SGP 2
+  server: musical-mouse.rooster465.autos
+  port: 443
+  type: trojan
+  password: UX82473651
+  sni: musical-mouse.rooster465.autos
+  skip-cert-verify: true
+  udp: true
 - name: 🇸🇬SG新加坡丨yoyapai.com_12
   type: vless
   server: 104.17.191.15
@@ -109,14 +117,6 @@ proxies:
     headers:
       Host: fancy-haze-ab00.236-68b.workers.dev
   skip-cert-verify: false
-  udp: true
-- name: 🇸🇬 新加坡 | SGP 2
-  server: musical-mouse.rooster465.autos
-  port: 443
-  type: trojan
-  password: UX82473651
-  sni: musical-mouse.rooster465.autos
-  skip-cert-verify: true
   udp: true
 - name: 🇯🇵 日本 | JPN
   server: stable-python.rooster465.autos
@@ -198,6 +198,14 @@ proxies:
       Host: icy-darkness-8ff1.farzambia12mo.workers.dev
   skip-cert-verify: false
   udp: true
+- name: 🇺🇸 美国 | USA 6
+  server: alert-titmouse.rooster465.autos
+  port: 443
+  type: trojan
+  password: UX82473651
+  sni: alert-titmouse.rooster465.autos
+  skip-cert-verify: true
+  udp: true
 - name: 🇺🇸 美国 | USA 3
   server: 103.11.76.248
   port: 80
@@ -208,14 +216,6 @@ proxies:
   plugin-opts:
     mode: http
     host: upay.10010.com
-  udp: true
-- name: 🇺🇸 美国 | USA 6
-  server: alert-titmouse.rooster465.autos
-  port: 443
-  type: trojan
-  password: UX82473651
-  sni: alert-titmouse.rooster465.autos
-  skip-cert-verify: true
   udp: true
 - name: 🇺🇸 美国 | USA 4
   server: tk1.high-speed-test-56424.me
@@ -302,13 +302,6 @@ proxies:
     headers:
       Host: 321dfbc6.uir-9i6.pages.dev
   udp: true
-- name: 🇫🇷 法国 | FRA 5
-  server: 51.44.86.16
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-  udp: true
 - name: 🇰🇷 韩国 | KOR 6
   server: 52.78.216.116
   port: 443
@@ -322,6 +315,13 @@ proxies:
   servername: qa.api.sazo.kr
   client-fingerprint: chrome
   network: tcp
+  udp: true
+- name: 🇫🇷 法国 | FRA 5
+  server: 51.44.86.16
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
   udp: true
 - name: 🇩🇪 德国 | DEU 2
   server: gw1.edgemedia.lol
@@ -496,19 +496,6 @@ proxies:
       Host: square-sea-01d1.339-be3.workers.dev
   skip-cert-verify: false
   udp: true
-- name: 🇨🇦CA加拿大丨yoyapai.com_2
-  type: vless
-  server: 104.21.23.72
-  port: 8880
-  uuid: f4e6476f-40d0-40cb-841f-cc2f6909ff20
-  network: ws
-  tls: false
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: calm-haze-d105.21-7cd.workers.dev
-  skip-cert-verify: false
-  udp: true
 - name: 🇫🇷 法国 | FRA 2
   server: 62.210.70.191
   port: 23556
@@ -522,6 +509,19 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
+- name: 🇨🇦CA加拿大丨yoyapai.com_2
+  type: vless
+  server: 104.21.23.72
+  port: 8880
+  uuid: f4e6476f-40d0-40cb-841f-cc2f6909ff20
+  network: ws
+  tls: false
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: calm-haze-d105.21-7cd.workers.dev
+  skip-cert-verify: false
+  udp: true
 proxy-groups:
 - name: AUTO-FAST
   type: url-test
@@ -535,16 +535,16 @@ proxy-groups:
   - 🇸🇬 新加坡 | SGP
   - 🇸🇬 新加坡 | SGP 8
   - 🇸🇬 新加坡 | SGP 6
-  - 🇸🇬SG新加坡丨yoyapai.com_12
   - 🇸🇬 新加坡 | SGP 2
+  - 🇸🇬SG新加坡丨yoyapai.com_12
   - 🇯🇵 日本 | JPN
   - 🇭🇰 香港 | HKG 8
   - 🇺🇸美國丨yoyapai.com_1
   - 🇺🇸美国丨yoyapai.com
   - 🇺🇸 美国 | USA 11
   - 🗽🇺🇸美國CloudFlare节点丨yoyapai.com
-  - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 6
+  - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 4
   - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 10
@@ -552,8 +552,8 @@ proxy-groups:
   - 🇺🇸US美国丨yoyapai.com_3
   - 🇺🇸 美国 | USA 12
   - 🇺🇸 美国 | USA 2
-  - 🇫🇷 法国 | FRA 5
   - 🇰🇷 韩国 | KOR 6
+  - 🇫🇷 法国 | FRA 5
   - 🇩🇪 德国 | DEU 2
   - 🇰🇷 韩国 | KOR 2
   - 🇰🇷 韩国 | KOR 4
@@ -569,8 +569,8 @@ proxy-groups:
   - 🇸🇪 瑞典 | SWE
   - 🇰🇷 韩国 | KOR
   - ❓未知丨yoyapai.com_9
-  - 🇨🇦CA加拿大丨yoyapai.com_2
   - 🇫🇷 法国 | FRA 2
+  - 🇨🇦CA加拿大丨yoyapai.com_2
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: HK-POOL
@@ -596,8 +596,8 @@ proxy-groups:
   - 🇺🇸美国丨yoyapai.com
   - 🇺🇸 美国 | USA 11
   - 🗽🇺🇸美國CloudFlare节点丨yoyapai.com
-  - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 6
+  - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 4
   - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 10
@@ -610,15 +610,15 @@ proxy-groups:
 - name: AI-POOL
   type: url-test
   proxies:
-  - 🇺🇸US美国丨yoyapai.com_3
-  - 🇺🇸 美国 | USA
-  - 🇺🇸美國丨yoyapai.com_1
-  - 🇺🇸 美国 | USA 3
-  - 🇸🇬SG新加坡丨yoyapai.com_12
-  - ❓未知丨yoyapai.com_9
-  - 🇨🇦CA加拿大丨yoyapai.com_2
-  - 🗽🇺🇸美國CloudFlare节点丨yoyapai.com
-  - 🇺🇸 美国 | USA 12
+  - 🇭🇰 香港 | HKG 7
+  - 🇭🇰 香港 | HKG 2
+  - 🇸🇬 新加坡 | SGP 5
+  - 🇯🇵 日本 | JPN 2
+  - 🇸🇬 新加坡 | SGP 7
+  - 🇭🇰 香港 | HKG 5
+  - 🇸🇬 新加坡 | SGP
+  - 🇸🇬 新加坡 | SGP 8
+  - 🇸🇬 新加坡 | SGP 6
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
