@@ -7,9 +7,9 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-10-18T11:48:48.556509+00:00'
+generated-at: '2026-10-18T14:56:30.776967+00:00'
 proxies:
-- name: 🇭🇰 香港 | HKG 5
+- name: 🇭🇰 香港 | HKG 2
   server: 152.233.71.81
   port: 443
   type: vless
@@ -23,7 +23,7 @@ proxies:
   client-fingerprint: random
   network: tcp
   udp: true
-- name: 🇭🇰 香港 | HKG
+- name: 🇭🇰 香港 | HKG 5
   server: nycqg19zkwacpm1b.v.3dns.vip
   port: 443
   type: vmess
@@ -38,22 +38,32 @@ proxies:
     headers:
       Host: NYcQg19zkwaCPM1B.v.3dns.vip
   udp: true
-- name: 🇺🇸 美国 | USA 11
-  server: 172.67.187.145
-  port: 80
-  type: vmess
-  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
-  alterId: 0
-  cipher: auto
-  tls: false
-  alpn:
-  - ''
-  skip-cert-verify: true
+- name: 🇸🇬 新加坡 | SGP 3
+  server: sgip.harry.lv
+  port: 443
+  type: vless
+  uuid: 5d75a660-f04e-4301-a41b-d394bae03970
+  tls: true
+  servername: sgcf.harry.lv
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /ws
+    path: /sg
     headers:
-      Host: vmess.lbw666.dpdns.org
+      Host: sgcf.harry.lv
+  udp: true
+- name: 🇺🇸 美国 | USA 9
+  server: 104.18.35.86
+  port: 2082
+  type: vless
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  tls: false
+  servername: hhlfy.twiladaphne.ndjp.net
+  network: ws
+  ws-opts:
+    path: /fp
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
   udp: true
 - name: 🇺🇸US美国丨yoyapai.com_16
   type: vless
@@ -70,32 +80,46 @@ proxies:
   skip-cert-verify: false
   udp: true
 - name: 🇺🇸 美国 | USA 6
-  server: 104.18.40.100
+  server: grimness-backlogs.cdn-content.com
   port: 443
   type: vless
-  uuid: d342d11e-d224-4463-b982-532309285094
+  uuid: 48f09fbe-7a6e-43d2-99a3-304c943f3bb4
   tls: true
-  servername: ccc.010304.xyz
+  alpn:
+  - http/1.1
+  packet-encoding: xudp
+  servername: grimness-backlogs.cdn-content.com
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /
+    path: /ws
     headers:
-      Host: ccc.010304.xyz
+      Host: grimness-backlogs.cdn-content.com
+  udp: true
+- name: 🇺🇸 美国 | USA 7
+  server: resources.findlocaljobnetworkandbuildcommunityconnections.com
+  port: 443
+  type: trojan
+  password: f0eb8c92ce8946aaba856569cff1a16b
+  sni: resources.findlocaljobnetworkandbuildcommunityconnections.com
+  skip-cert-verify: true
   udp: true
 - name: 🇺🇸 美国 | USA 3
-  server: 104.21.43.200
-  port: 2086
+  server: bounded-crammed.video-streams.org
+  port: 443
   type: vless
-  uuid: 732ec777-bf4a-4fee-835a-25d6a8b58563
-  tls: false
-  encryption: mlkem768x25519plus.native.0rtt.bbZ_n5p4kMaHUMaX_eKVS7K_igesJC14PtiVSxm9qTI
+  uuid: 48f09fbe-7a6e-43d2-99a3-304c943f3bb4
+  tls: true
+  alpn:
+  - http/1.1
+  packet-encoding: xudp
+  servername: bounded-crammed.video-streams.org
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /pers
+    path: /ws
     headers:
-      Host: trnewpnlszhp.p40.site
-    v2ray-http-upgrade: true
+      Host: bounded-crammed.video-streams.org
   udp: true
 - name: 🇺🇸US美国丨yoyapai.com
   type: trojan
@@ -109,7 +133,7 @@ proxies:
   ws-opts:
     path: /assignment
   udp: true
-- name: 🇺🇸 美国 | USA 2
+- name: 🇺🇸 美国 | USA 10
   server: s2317.kukuss.top
   port: 443
   type: vless
@@ -117,6 +141,30 @@ proxies:
   tls: true
   flow: xtls-rprx-vision
   servername: u695098uf24555c7s2316.gogocs.xyz
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA 12
+  server: 104.18.65.57
+  port: 443
+  type: trojan
+  password: 5504eaa8-1395-402f-8e0e-75ecd762e627
+  sni: nat3.xxai.dpdns.org
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /anyway
+    headers:
+      Host: nat3.xxai.dpdns.org
+  udp: true
+- name: 🇪🇪 爱沙尼亚 | EST 2
+  server: 196.198.111.107
+  port: 8443
+  type: vless
+  uuid: b3441cc7-1e5f-4eb6-8207-90788eeca21e
+  tls: true
+  flow: xtls-rprx-vision
+  servername: api-6ad3c751.adhil.uk
   client-fingerprint: chrome
   network: tcp
   udp: true
@@ -133,6 +181,19 @@ proxies:
     public-key: GCCZ1ZZjB_nj7yxqFi22bIIWWr_G6rnWUzDcssN_40o
     short-id: b28db60d77c50b4f
   skip-cert-verify: false
+  udp: true
+- name: 🇷🇺 俄罗斯 | RUS
+  server: rus.noooo.win
+  port: 8443
+  type: vless
+  uuid: b3441cc7-1e5f-4eb6-8207-90788eeca21e
+  tls: true
+  alpn:
+  - h2
+  flow: xtls-rprx-vision
+  servername: id-6ad3c751.adhil.uk
+  client-fingerprint: edge
+  network: tcp
   udp: true
 - name: 🇮🇪 爱尔兰 | IRL
   server: 108.130.238.169
@@ -176,21 +237,6 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: 850a3fb1cd33a28f12d837578ae1a2e7
-- name: 🇩🇪 德国 | DEU 6
-  server: 109.172.54.135
-  port: 8444
-  type: vless
-  uuid: f55e9aba-7b14-4f6f-b59a-d5b3d45c9309
-  tls: true
-  reality-opts:
-    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
-  servername: github.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: GunService
-  udp: true
 - name: 🇩🇪DE德国丨yoyapai.com_13
   type: vless
   server: 169.40.42.229
@@ -205,29 +251,40 @@ proxies:
     short-id: c39cc7310a
   skip-cert-verify: false
   udp: true
-- name: 🇬🇧 英国 | GBR 2
-  server: 13.135.33.165
-  port: 22224
+- name: 🇷🇴 罗马尼亚 | ROU
+  server: de7.dedushka.top
+  port: 443
+  type: trojan
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  sni: de7.dedushka.top
+  skip-cert-verify: true
+  udp: true
+- name: 🇫🇷 法国 | FRA 3
+  server: 51.44.197.117
+  port: 22222
   type: vless
   uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
   tls: false
   network: tcp
   udp: true
-- name: 🇫🇷 法国 | FRA 4
-  server: redcloudport-bidarbash.sbs
-  port: 443
+- name: 🇧🇷 巴西 | BRA
+  server: 137.131.171.249
+  port: 20000
+  type: hysteria2
+  password: CyG0RFxMjzs41uQD4OLuHQ==
+  auth: CyG0RFxMjzs41uQD4OLuHQ==
+  sni: rmgyvpn.rest
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: CyG0RFxMjzs41uQD4OLuHQ==
+  ports: 20000-30000
+- name: 🇬🇧 英国 | GBR 2
+  server: 13.135.33.165
+  port: 22222
   type: vless
-  uuid: 2bdcf0ac-f84e-471f-98dc-a1807acab1cb
-  tls: true
-  alpn:
-  - http/1.1
-  servername: redcloudport-bidarbash.sbs
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /zoodi
-    headers:
-      Host: redcloudport-bidarbash.sbs
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  tls: false
+  network: tcp
   udp: true
 - name: 🇰🇷 韩国 | KOR
   server: 43.202.48.94
@@ -244,17 +301,33 @@ proxies:
       Host:
       - play.googleapis.com
   udp: true
+- name: 🇫🇷 法国 | FRA
+  server: 51.44.197.117
+  port: 22224
+  type: vless
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  tls: false
+  network: tcp
+  udp: true
 - name: 🇫🇷 法国 | FRA 2
-  server: fr167230.cdn-video.pro
+  server: redcloudport-bidarbash.sbs
   port: 443
-  type: hysteria2
-  password: dd1b14f6-d290-428b-8d22-12105541c4c9
-  auth: dd1b14f6-d290-428b-8d22-12105541c4c9
-  sni: fr167230.cdn-video.pro
-  skip-cert-verify: true
-- name: 🇬🇧 英国 | GBR
+  type: vless
+  uuid: 2bdcf0ac-f84e-471f-98dc-a1807acab1cb
+  tls: true
+  alpn:
+  - http/1.1
+  servername: redcloudport-bidarbash.sbs
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /zoodi
+    headers:
+      Host: redcloudport-bidarbash.sbs
+  udp: true
+- name: 🇬🇧 英国 | GBR 3
   server: 13.135.33.165
-  port: 22222
+  port: 22224
   type: vless
   uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
   tls: false
@@ -264,61 +337,72 @@ proxy-groups:
 - name: AUTO-FAST
   type: url-test
   proxies:
+  - 🇭🇰 香港 | HKG 2
   - 🇭🇰 香港 | HKG 5
-  - 🇭🇰 香港 | HKG
-  - 🇺🇸 美国 | USA 11
+  - 🇸🇬 新加坡 | SGP 3
+  - 🇺🇸 美国 | USA 9
   - 🇺🇸US美国丨yoyapai.com_16
   - 🇺🇸 美国 | USA 6
+  - 🇺🇸 美国 | USA 7
   - 🇺🇸 美国 | USA 3
   - 🇺🇸US美国丨yoyapai.com
-  - 🇺🇸 美国 | USA 2
+  - 🇺🇸 美国 | USA 10
+  - 🇺🇸 美国 | USA 12
+  - 🇪🇪 爱沙尼亚 | EST 2
   - 🇱🇻LV拉脱维亚丨yoyapai.com
+  - 🇷🇺 俄罗斯 | RUS
   - 🇮🇪 爱尔兰 | IRL
   - ❓未知丨yoyapai.com_1
   - 🇦🇺 澳大利亚 | AUS
-  - 🇩🇪 德国 | DEU 6
   - 🇩🇪DE德国丨yoyapai.com_13
+  - 🇷🇴 罗马尼亚 | ROU
+  - 🇫🇷 法国 | FRA 3
+  - 🇧🇷 巴西 | BRA
   - 🇬🇧 英国 | GBR 2
-  - 🇫🇷 法国 | FRA 4
   - 🇰🇷 韩国 | KOR
+  - 🇫🇷 法国 | FRA
   - 🇫🇷 法国 | FRA 2
-  - 🇬🇧 英国 | GBR
+  - 🇬🇧 英国 | GBR 3
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: HK-POOL
   type: url-test
   proxies:
+  - 🇭🇰 香港 | HKG 2
   - 🇭🇰 香港 | HKG 5
-  - 🇭🇰 香港 | HKG
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: JP-POOL
   type: url-test
   proxies:
+  - 🇭🇰 香港 | HKG 2
   - 🇭🇰 香港 | HKG 5
-  - 🇭🇰 香港 | HKG
-  - 🇺🇸 美国 | USA 11
+  - 🇸🇬 新加坡 | SGP 3
+  - 🇺🇸 美国 | USA 9
   - 🇺🇸US美国丨yoyapai.com_16
-  - 🇺🇸 美国 | USA 6
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: US-POOL
   type: url-test
   proxies:
-  - 🇺🇸 美国 | USA 11
+  - 🇺🇸 美国 | USA 9
   - 🇺🇸US美国丨yoyapai.com_16
   - 🇺🇸 美国 | USA 6
+  - 🇺🇸 美国 | USA 7
   - 🇺🇸 美国 | USA 3
   - 🇺🇸US美国丨yoyapai.com
-  - 🇺🇸 美国 | USA 2
+  - 🇺🇸 美国 | USA 10
+  - 🇺🇸 美国 | USA 12
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: AI-POOL
   type: url-test
   proxies:
   - 🇺🇸US美国丨yoyapai.com
-  - 🇺🇸 美国 | USA 6
-  - 🇺🇸US美国丨yoyapai.com_16
+  - 🇺🇸 美国 | USA 9
+  - 🇩🇪DE德国丨yoyapai.com_13
+  - 🇺🇸 美国 | USA 10
+  - 🇺🇸 美国 | USA 7
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
