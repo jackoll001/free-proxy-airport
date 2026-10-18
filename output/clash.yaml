@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-10-18T21:58:13.141598+00:00'
+generated-at: '2026-10-18T23:50:25.460980+00:00'
 proxies:
 - name: 🇭🇰 香港 | HKG 5
   server: nycqg19zkwacpm1b.v.3dns.vip
@@ -51,6 +51,14 @@ proxies:
     short-id: 21270a66
   skip-cert-verify: false
   udp: true
+- name: 🇺🇸 美国 | USA 7
+  server: resources.findlocaljobnetworkandbuildcommunityconnections.com
+  port: 443
+  type: trojan
+  password: f0eb8c92ce8946aaba856569cff1a16b
+  sni: resources.findlocaljobnetworkandbuildcommunityconnections.com
+  skip-cert-verify: true
+  udp: true
 - name: 🇺🇸US美国丨yoyapai.com
   type: trojan
   server: 216.24.57.7
@@ -62,25 +70,6 @@ proxies:
   skip-cert-verify: false
   ws-opts:
     path: /assignment
-  udp: true
-- name: 🇺🇸 美国 | USA 7
-  server: resources.findlocaljobnetworkandbuildcommunityconnections.com
-  port: 443
-  type: trojan
-  password: f0eb8c92ce8946aaba856569cff1a16b
-  sni: resources.findlocaljobnetworkandbuildcommunityconnections.com
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇸 美国 | USA 10
-  server: s2317.kukuss.top
-  port: 443
-  type: vless
-  uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3
-  tls: true
-  flow: xtls-rprx-vision
-  servername: u695098uf24555c7s2316.gogocs.xyz
-  client-fingerprint: chrome
-  network: tcp
   udp: true
 - name: 🇷🇺 俄罗斯 | RUS 2
   server: 78.159.246.179
@@ -140,14 +129,6 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: 850a3fb1cd33a28f12d837578ae1a2e7
-- name: 🇷🇴 罗马尼亚 | ROU
-  server: de7.dedushka.top
-  port: 443
-  type: trojan
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  sni: de7.dedushka.top
-  skip-cert-verify: true
-  udp: true
 - name: 🇩🇪DE德国丨yoyapai.com_13
   type: vless
   server: 169.40.42.229
@@ -162,19 +143,13 @@ proxies:
     short-id: c39cc7310a
   skip-cert-verify: false
   udp: true
-- name: 🇳🇱 荷兰 | NLD 2
-  server: 50d9ab69755390c8.wgse.info
+- name: 🇷🇴 罗马尼亚 | ROU
+  server: de7.dedushka.top
   port: 443
-  type: vless
-  uuid: 9f56bdc2-3238-4190-9b83-1c8332a7f3f8
-  tls: true
-  servername: 50d9ab69755390c8.wgse.info
-  client-fingerprint: firefox
-  network: xhttp
-  xhttp-opts:
-    path: /xh
-    host: 50d9ab69755390c8.wgse.info
-    mode: auto
+  type: trojan
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  sni: de7.dedushka.top
+  skip-cert-verify: true
   udp: true
 - name: 🇫🇷 法国 | FRA 2
   server: redcloudport-bidarbash.sbs
@@ -199,16 +174,14 @@ proxy-groups:
   - 🇭🇰 香港 | HKG 5
   - 🇺🇸 美国 | USA 9
   - 🇺🇸US美国丨yoyapai.com_16
-  - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 7
-  - 🇺🇸 美国 | USA 10
+  - 🇺🇸US美国丨yoyapai.com
   - 🇷🇺 俄罗斯 | RUS 2
   - 🇱🇻LV拉脱维亚丨yoyapai.com
   - ❓未知丨yoyapai.com_1
   - 🇦🇺 澳大利亚 | AUS
-  - 🇷🇴 罗马尼亚 | ROU
   - 🇩🇪DE德国丨yoyapai.com_13
-  - 🇳🇱 荷兰 | NLD 2
+  - 🇷🇴 罗马尼亚 | ROU
   - 🇫🇷 法国 | FRA 2
   url: http://www.gstatic.com/generate_204
   interval: 120
@@ -224,8 +197,8 @@ proxy-groups:
   - 🇭🇰 香港 | HKG 5
   - 🇺🇸 美国 | USA 9
   - 🇺🇸US美国丨yoyapai.com_16
-  - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 7
+  - 🇺🇸US美国丨yoyapai.com
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: US-POOL
@@ -233,9 +206,8 @@ proxy-groups:
   proxies:
   - 🇺🇸 美国 | USA 9
   - 🇺🇸US美国丨yoyapai.com_16
-  - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 7
-  - 🇺🇸 美国 | USA 10
+  - 🇺🇸US美国丨yoyapai.com
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: AI-POOL
@@ -243,7 +215,7 @@ proxy-groups:
   proxies:
   - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 9
-  - 🇺🇸US美国丨yoyapai.com_16
+  - 🇩🇪DE德国丨yoyapai.com_13
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
