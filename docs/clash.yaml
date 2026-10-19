@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-10-19T20:16:59.546148+00:00'
+generated-at: '2026-10-19T23:50:35.011812+00:00'
 proxies:
 - name: 🇯🇵 日本 | JPN 2
   server: 154.36.158.197
@@ -65,6 +65,13 @@ proxies:
     short-id: 21270a66
   skip-cert-verify: false
   udp: true
+- name: 🇺🇸 美国 | USA 5
+  server: 98.98.79.198
+  port: 8080
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+  udp: true
 - name: 🇺🇸 美国 | USA 4
   server: vless-colo.whuiy.xyz
   port: 443
@@ -78,25 +85,6 @@ proxies:
     path: /xhttp-us
     host: vless-colo.whuiy.xyz
     mode: auto
-  udp: true
-- name: 🇺🇸US美国丨yoyapai.com_1
-  type: trojan
-  server: 216.24.57.7
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: false
-  ws-opts:
-    path: /assignment
-  udp: true
-- name: 🇺🇸 美国 | USA 5
-  server: 98.98.79.198
-  port: 8080
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
   udp: true
 - name: 🇺🇸 美国 | USA 13
   server: 44.251.76.224
@@ -112,6 +100,18 @@ proxies:
     headers:
       Host:
       - play.googleapis.com
+  udp: true
+- name: 🇺🇸US美国丨yoyapai.com_1
+  type: trojan
+  server: 216.24.57.7
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: false
+  ws-opts:
+    path: /assignment
   udp: true
 - name: 🇺🇸 美国 | USA 12
   server: 100.54.27.217
@@ -142,32 +142,49 @@ proxies:
     short-id: c39cc7310a
   skip-cert-verify: false
   udp: true
-- name: 🇹🇼 🇨🇳 台湾 | TWN 3
-  server: 152.32.167.33
-  port: 443
+- name: ❓未知丨yoyapai.com_61
   type: vless
-  uuid: 91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a
+  server: funagfrdfs.alixxplay.com
+  port: 46105
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  servername: www.lamer.com.sg
   tls: true
   flow: xtls-rprx-vision
-  reality-opts:
-    public-key: Q8QwBSGN6J-FqgDV1pYNm0VThS_xNRyQ3DPPa9YZ3j4
-    short-id: cff998a4
-  servername: www.amazon.com
   client-fingerprint: chrome
-  network: tcp
+  reality-opts:
+    public-key: Lk5nwDxC2tr3J7hT8emhUUiMX8cHyKX9TiRj_EnAiik
+    short-id: 28f5c1f8f98a
+  skip-cert-verify: false
   udp: true
-- name: 🇱🇻LV拉脱维亚丨yoyapai.com
+- name: 🇷🇺 俄罗斯 | RUS
+  server: 78.159.246.179
+  port: 2053
   type: vless
-  server: 193.163.203.170
-  port: 443
-  uuid: 11aabba0-5fd1-4f15-8068-74c1a466cefc
-  servername: yandex.ru
+  uuid: 6a2aff19-ff1f-4a13-96c8-a4d8986a9699
   tls: true
-  flow: xtls-rprx-vision
+  alpn:
+  - http/1.1
+  - h2
+  servername: randomquaint.net
+  client-fingerprint: firefox
+  network: xhttp
+  xhttp-opts:
+    path: /api/v1/upload
+    host: randomquaint.net
+    mode: auto
+    x-padding-bytes: 100-1000
+    x-padding-obfs-mode: false
+  udp: true
+- name: ❓未知丨yoyapai.com_46
+  type: vless
+  server: hinet1.2yly.com
+  port: 24215
+  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
+  servername: addons.mozilla.org
+  tls: true
   client-fingerprint: chrome
   reality-opts:
-    public-key: GCCZ1ZZjB_nj7yxqFi22bIIWWr_G6rnWUzDcssN_40o
-    short-id: b28db60d77c50b4f
+    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   skip-cert-verify: false
   udp: true
 - name: 🇦🇺 澳大利亚 | AUS 2
@@ -211,6 +228,20 @@ proxies:
       Host: free.sahanwickramasinghe.me
   skip-cert-verify: false
   udp: true
+- name: ❓未知丨yoyapai.com_12
+  type: vless
+  server: sg2-8sb.6121999.dpdns.org
+  port: 19825
+  uuid: 2d1ad594-80a4-4bfb-87a6-038e39701f51
+  servername: sg2-8sb.6121999.dpdns.org
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: GvvkY8xYb9QjvwvzYq_uNC4tOGd0DCxRnz6770-xgkI
+    short-id: 6ba85179e30d4fc2
+  skip-cert-verify: false
+  udp: true
 - name: 🇫🇷 法国 | FRA
   server: speedtest.org
   port: 8443
@@ -227,20 +258,6 @@ proxies:
     headers:
       Host: pbsjv.megalionzone-vexina.sbs
   udp: true
-- name: ❓未知丨yoyapai.com_12
-  type: vless
-  server: sg2-8sb.6121999.dpdns.org
-  port: 19825
-  uuid: 2d1ad594-80a4-4bfb-87a6-038e39701f51
-  servername: sg2-8sb.6121999.dpdns.org
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: GvvkY8xYb9QjvwvzYq_uNC4tOGd0DCxRnz6770-xgkI
-    short-id: 6ba85179e30d4fc2
-  skip-cert-verify: false
-  udp: true
 - name: ❓未知丨yoyapai.com_48
   type: vless
   server: 172.64.152.241
@@ -255,22 +272,6 @@ proxies:
       Host: ccc.010304.xyz
   skip-cert-verify: false
   udp: true
-- name: 🇱🇻 拉脱维亚 | LVA
-  server: 138.124.63.224
-  port: 8444
-  type: vless
-  uuid: f55e9aba-7b14-4f6f-b59a-d5b3d45c9309
-  tls: true
-  reality-opts:
-    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
-    short-id: 457fab2ac885dbe0
-  servername: github.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: GunService
-  udp: true
 proxy-groups:
 - name: AUTO-FAST
   type: url-test
@@ -280,21 +281,21 @@ proxy-groups:
   - 🇸🇬 新加坡 | SGP 4
   - 🇺🇸 美国 | USA 11
   - 🇺🇸US美国丨yoyapai.com_14
-  - 🇺🇸 美国 | USA 4
-  - 🇺🇸US美国丨yoyapai.com_1
   - 🇺🇸 美国 | USA 5
+  - 🇺🇸 美国 | USA 4
   - 🇺🇸 美国 | USA 13
+  - 🇺🇸US美国丨yoyapai.com_1
   - 🇺🇸 美国 | USA 12
   - 🇩🇪DE德国丨yoyapai.com_10
-  - 🇹🇼 🇨🇳 台湾 | TWN 3
-  - 🇱🇻LV拉脱维亚丨yoyapai.com
+  - ❓未知丨yoyapai.com_61
+  - 🇷🇺 俄罗斯 | RUS
+  - ❓未知丨yoyapai.com_46
   - 🇦🇺 澳大利亚 | AUS 2
   - 🇳🇱NL荷兰丨yoyapai.com
   - 🇱🇰LK斯里兰卡丨yoyapai.com
-  - 🇫🇷 法国 | FRA
   - ❓未知丨yoyapai.com_12
+  - 🇫🇷 法国 | FRA
   - ❓未知丨yoyapai.com_48
-  - 🇱🇻 拉脱维亚 | LVA
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: HK-POOL
@@ -318,10 +319,10 @@ proxy-groups:
   proxies:
   - 🇺🇸 美国 | USA 11
   - 🇺🇸US美国丨yoyapai.com_14
-  - 🇺🇸 美国 | USA 4
-  - 🇺🇸US美国丨yoyapai.com_1
   - 🇺🇸 美国 | USA 5
+  - 🇺🇸 美国 | USA 4
   - 🇺🇸 美国 | USA 13
+  - 🇺🇸US美国丨yoyapai.com_1
   - 🇺🇸 美国 | USA 12
   url: http://www.gstatic.com/generate_204
   interval: 120
@@ -329,9 +330,9 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇺🇸US美国丨yoyapai.com_1
+  - 🇺🇸 美国 | USA 12
+  - 🇺🇸 美国 | USA 5
   - ❓未知丨yoyapai.com_48
-  - 🇺🇸 美国 | USA 13
-  - 🇺🇸 美国 | USA 11
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
